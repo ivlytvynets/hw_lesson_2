@@ -11,6 +11,8 @@ public class Main {
         int divideNum = a / b;
         System.out.println(divideNum);
 
+
+
     }
 }
 
