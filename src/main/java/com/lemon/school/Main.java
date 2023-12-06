@@ -9,7 +9,6 @@ public class Main {
     String str1 = greet("!!!");
     System.out.println(str1);
 
-
     //Робота методу 2 - divide
     System.out.println(divide(12));
     int number = 100;
@@ -17,6 +16,9 @@ public class Main {
     int number1 = divide(200);
     System.out.println(number1);
 
+    if (isEvenMethod2(10)){
+      System.out.println("even");
+    }else System.out.println("Odd");
 
     //Робота методу 3 - isEven
     System.out.println(isEven(2));
@@ -45,6 +47,7 @@ public class Main {
   }
 
   //isEven - Чи парне число. Приймає на вхід ціле число, повертає булеве значення
+  //переробить метод або доробить (true or false)
   public static String isEven(int number){
     if (number == 0){
       // Я не знав чи потрібно робити перевірку на нуль чи ні, тому добавив
@@ -54,6 +57,10 @@ public class Main {
     }else {
       return "Odd";
     }
+  }
+
+  public static boolean isEvenMethod2(int number){
+    return number % 2 == 0;
   }
 
   // print - Вивід на екран строки. Приймає строку, виводить в консоль передану строку. (Передати результат роботи методу greet)
