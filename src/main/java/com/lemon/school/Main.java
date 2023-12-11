@@ -11,9 +11,6 @@ public class Main {
   print(greeting1);
    print(greeting2);
 
-  /* System.out.println(greeting);
-   System.out.println(greeting1);
-   System.out.println(greeting2);*/
 
    int a = 4;
    int b = 2;
@@ -56,3 +53,4 @@ public class Main {
 
 
 }
+
