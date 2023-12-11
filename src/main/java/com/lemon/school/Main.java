@@ -10,23 +10,20 @@ public class Main {
     System.out.println(str1);
 
     //Робота методу 2 - divide
-    System.out.println(divide(12));
-    int number = 100;
-    System.out.println(divide(number));
-    int number1 = divide(200);
-    System.out.println(number1);
+    System.out.println(divide(12, 2));
+    int number = 100, number1 = 50;
+    System.out.println(divide(number, number1));
 
-    if (isEvenMethod2(10)){
-      System.out.println("even");
-    }else System.out.println("Odd");
+
 
     //Робота методу 3 - isEven
-    System.out.println(isEven(2));
-    int number2 = 3;
-    System.out.println(isEven(number2));
-    String evenOrOdd = isEven(5);
-    System.out.println(evenOrOdd);
+    if (isEven(3)){
+      System.out.println("Even");
+    }else {
+      System.out.println("Odd");
+    }
 
+    // Робота методу 3 - print
     String hello = "Hello, ";
     String world = "world";
     String sign = "!!!";
@@ -42,23 +39,28 @@ public class Main {
   }
 
   //divide - Ділення. Приймає на вхід 2 цілочисельних значення, повертає ціле число
-  public static int divide(int number){
-    return number / 2;
+  // Поправки до коментаря
+  public static int divide(int a, int b) {
+    if (b == 0) {
+      throw new ArithmeticException("Ділення на нуль неможливе");
+    }
+    return a / b;
   }
 
   //isEven - Чи парне число. Приймає на вхід ціле число, повертає булеве значення
   //переробить метод або доробить (true or false)
-  public static String isEven(int number){
+  public static boolean isEven(int number){
     if (number == 0){
       // Я не знав чи потрібно робити перевірку на нуль чи ні, тому добавив
-      return "Zero";
+      throw new ArithmeticException("Нуль");
     }else if (number % 2 == 0){
-      return "Even";
+      return true;
     }else {
-      return "Odd";
+      return false;
     }
   }
 
+  // Це трохи інша реалізація
   public static boolean isEvenMethod2(int number){
     return number % 2 == 0;
   }
