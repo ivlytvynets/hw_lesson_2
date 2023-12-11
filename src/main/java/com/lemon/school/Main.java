@@ -25,27 +25,16 @@ public class Main {
   }
 
   public static int divide(int num1, int num2){
-    if (num1 >= num2) {
-      return num1 / num2;
-    }
-    return 0;
+    return (num1 / num2);
   }
 
   public static boolean isEven(int num){
-    boolean result;
-    if (num % 2 == 0 ){
-      result = true;
-    }
-    else {
-      result = false;
-    }
-    return result;
+    return (num % 2 == 0 );
   }
 
-  public static String print(String name){
+  public static void print(String name){
     String str = greet(name);
     System.out.println(str);
-    return str;
   }
 
 }
