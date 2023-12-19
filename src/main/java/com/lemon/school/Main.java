@@ -8,15 +8,11 @@ public class Main {
 
         int a = 280;
         int b = 140;
-        int a1 = 555;
-        int b1 = 230;
-        int a2 = 950;
-        int b2 = 240;
         int divide = Divide(a, b);
 
         System.out.println("Результат:" + divide);
 
-        int num1 = 40;
+        int num1 = 35;
         System.out.println(isEven(num1));
 
         String Hello = "Hello";
@@ -24,7 +20,6 @@ public class Main {
         System.out.print(Hello);
         System.out.print(Bob);
     }
-
     public static String Name() {
         return "Hello Bob";
     }
